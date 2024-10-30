@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lớp giả trong CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 100px;
+            width: 250px;
+            background-color: aqua;
+        }
+        .hover:hover{
+            color: red;
+        }
+        .active:active{
+            color: aqua;
+        }
+        li:first-child{
+            color: blue;
+        }
+        li:last-child{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <h1>CSS Pseudo-Classes</h1>
+
+    <ul>
+        <li>:root  Tham chiếu thẻ gốc html</li>
+        <li>:hover  CSS chỉ được kính hoạt khi di chuột vào đối tượng đó</li>
+        <h1 class="hover">Ví dụ của thẻ hover, hãy di chuột vào đây</h1>
+        <li>:active  sẽ kích hoạt thuộc tính của CSS khi clik chuột vào</li>
+        <h1 class="active">Ví dụ của css active, click chuột vào đây</h1>
+        <li>:first-child lấy ra thẻ đầu trong 1 cái gì đó</li>
+        <li>:last-child lấy ra thẻ cuối trong 1 cái gì đó</li>
+    </ul>
+</body>
+</html>

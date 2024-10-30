@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Một số hàn trong CSS</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .box{
+            width: calc(20px * 20);
+            height: 120px;
+            background: rgb(210, 210, 210);
+        }
+        .box::after{
+            content: attr(data-title);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" data-title="Đây là cái box màu xám"></div>
+    <h1>CSS functions</h1>
+    <ul>
+        <li>var()</li>
+        <li>linear-gradient()</li>
+        <li>rgba()</li>
+        <li>rgb()</li>
+        <li>calc()</li>
+        <!-- tính toán các giá trị  -->
+        <li>attr()</li>
+    </ul>
+</body>
+</html>

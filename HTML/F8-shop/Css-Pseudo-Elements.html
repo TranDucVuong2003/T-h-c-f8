@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css phần tử giả</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+        }
+        .box::before{
+            content: "thẻ";
+            display: block;
+            height: 50px;
+            width: 50px;
+            background-color: #fff;
+        }
+        .box::after{
+            display: block;
+            content: "nội dung";
+            height: 50px;
+            width: 50px;
+            background-color: #fff;
+        }
+        .class1::first-letter{
+            color: red;
+            font-size: 25px;
+        }
+        .class2::first-letter{
+            color: rgb(45, 40, 196);
+            font-size: 40px;
+        }
+        h1::first-line{
+            font-size: 100px;
+        }
+        h1::selection{
+            color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <h1>CSS Pseudo-Elements</h1>
+
+    <ul>
+        <li>::before phần tử đầu tiên</li>
+        <li>::after phần tử cuối cùng</li>
+        <li class="class1">::first-letter css kí tự đầu tiên</li>
+        <li class="class2">::first-line css dòng đầu tiên</li>
+        <li>::selection  khi bôi đen sẽ thấy css</li>
+    </ul>
+</body>
+
+</html>

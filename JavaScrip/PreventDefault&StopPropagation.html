@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        ul{
+            display: none;
+        }
+
+        input:focus ~ ul {
+            display: block;
+        }
+    </style>
+    <input type="text" placeholder="Tìm kiếm">
+
+    <ul>
+        <li>Javascrip</li>
+        <li>PHP</li>
+        <li>Type</li>
+    </ul>
+
+
+    <div>
+        DIV
+        <button>Click me!</button>
+    </div>
+
+    <script>
+        /*
+        DOM events
+        
+        1. preventDefault
+        2. stopPropagation
+        */
+        //preventDefault
+        // var ulElement = document.querySelector('ul');
+
+        // ulElement.onmousedown = function(e){
+        //     e.preventDefault();
+        // }
+
+        // ulElement.onclick = function(e){
+        //     console.log(e.target);
+        // }
+
+
+
+
+        //stopPropagation
+        document.querySelector('div').onclick = function (){
+            console.log('DIV')
+        }
+
+        document.querySelector('button').onclick = function(e){
+            e.stopPropagation();
+            console.log('Click me!')
+        }
+
+
+    </script>
+</body>
+</html>

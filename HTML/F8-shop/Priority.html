@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority - Sự ưu tiên CSS</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        h1{
+            color: rgb(198, 223, 98);
+        }
+        .heading-class{
+            font-size: 28px;
+            color: blueviolet;
+        }
+        #heading-id{
+            color: aquamarine;
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="heading-id" class="heading-class">Sự ưu tiên CSS</h1>
+        <ol>
+            <li>Internal, External</li>
+            <!-- Internal, External mức độ ưu tiên bằng nhau cái nào viết sau thì cái đó -->
+            <li>Inline - 1000</li>
+            <li>#id - 100</li>
+            <li>.class - 10</li>
+            <li>tag - 1</li>
+            <li>Equal specifictity?</li>
+            <li>Universal selector and inherited?</li>
+        </ol>
+    </div>
+</body>
+
+</html>

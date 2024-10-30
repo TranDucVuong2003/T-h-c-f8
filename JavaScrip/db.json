@@ -1,0 +1,14 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "name": "Kiến thức",
+      "description": "Kiến thức cơ bản"
+    },
+    {
+      "id": 2,
+      "name": "Xây dựng web với NodeJs",
+      "description": "Xây dựng web với NodeJs một cách chi tiết"
+    }
+  ]
+}
